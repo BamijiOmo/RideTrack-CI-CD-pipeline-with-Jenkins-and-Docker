@@ -1,60 +1,67 @@
-🚦 RideTrack
+# 🚦 RideTrack
 
-RideTrack is a lightweight, containerized backend for tracking rides and managing live ride statuses.
-Built with Node.js, Docker, and Jenkins, it showcases automated CI/CD workflows and secure cloud deployment.
+**RideTrack** is a lightweight, containerized backend for tracking rides and managing live ride statuses.  
+Built with **Node.js**, **Docker**, and **Jenkins**, it showcases automated CI/CD workflows and secure cloud deployment.
 
-| Layer                | Technology         |
-| -------------------- | ------------------ |
-| **Backend**          | Node.js (Express)  |
-| **CI/CD**            | Jenkins            |
-| **Containerization** | Docker             |
-| **Cloud Hosting**    | AWS EC2 (t3.large) |
+---
 
-📦 Features
+## 🧱 Tech Stack
 
-🔗 RESTful API for ride tracking and status management
+| **Layer** | **Technology** |
+|------------|----------------|
+| **Backend** | Node.js (Express) |
+| **CI/CD** | Jenkins |
+| **Containerization** | Docker |
+| **Cloud Hosting** | AWS EC2 (t3.large) |
 
-🐳 Dockerized backend ensuring consistent environment setup
+---
 
-⚙️ Automated Jenkins pipeline with stages for:
+## 📦 Features
 
-Dependency installation
+- 🔗 **RESTful API** for ride tracking and status management  
+- 🐳 **Dockerized backend** ensuring consistent environment setup  
+- ⚙️ **Automated Jenkins pipeline** with stages for:
+  - Dependency installation  
+  - Application runtime validation  
+  - Docker image build  
+  - Deployment placeholder for EC2 or Kubernetes  
 
-Application runtime validation
+---
 
-Docker image build
+## 🔧 CI/CD Pipeline Overview
 
-Deployment placeholder for EC2 or Kubernetes
-
-🔧 CI/CD Pipeline Overview
-
-Flow Diagram:
+**Flow Diagram:**
 
 GitHub Push
-   ↓
+↓
 Jenkins Trigger
-   ↓
+↓
 Install Dependencies
-   ↓
+↓
 Run App & Validate
-   ↓
+↓
 Build Docker Image
-   ↓
+↓
 Deploy to EC2 / Kubernetes
 
-📂 Project Structure
+
+---
+
+## 📂 Project Structure
 
 RideTrack/
 ├── src/
-│   └── server.js
+│ └── server.js
 ├── Dockerfile
 ├── Jenkinsfile
 ├── package.json
 └── README.md
 
-🧪 Sample Output
 
+---
+
+## 🧪 Sample Output
+
+```bash
 $ curl http://localhost:3000
 🚦 RideTrack backend is live — CI/CD pipeline initialized.
-
-
